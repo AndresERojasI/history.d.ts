@@ -5,8 +5,6 @@
 
 // types based on https://github.com/rackt/history/blob/master/docs/Terms.md
 
-export as namespace History;
-
 export type Action = string;
 export type BeforeUnloadHook = () => string | boolean;
 export type CreateHistory<T> = (options?: HistoryOptions) => T;
@@ -126,3 +124,5 @@ export { default as useBeforeUnload } from "./lib/useBeforeUnload";
 export { default as useQueries } from "./lib/useQueries";
 import * as Actions from "./lib/actions";
 export { Actions };
+                                                                                             
+export as namespace History;
